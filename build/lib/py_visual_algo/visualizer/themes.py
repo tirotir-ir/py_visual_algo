@@ -1,0 +1,1 @@
+THEMES = {"dark": {}, "light": {}}
