@@ -218,6 +218,11 @@ Activate your virtual environment to use the installed library:
   ```bash
   <virtual_env_root>\Scripts\activate
   ```
+- Example:
+  ```bash
+  python -m venv env
+  env\Scripts\activate
+  ```
 
 - On **macOS/Linux**:
   ```bash
