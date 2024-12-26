@@ -139,7 +139,7 @@ cd examples
 ‍‍‍‍‍‍‍3. Run an example script:
 ‍‍‍
 ```bash
-    python sorting_example.py
+    python sorting1.py
 ```
 
 ## Available Examples
@@ -201,14 +201,134 @@ examples/
     ├── pathfinding1.py
     └── pathfinding2.py
 
-### **Using the Graphical User Interface (GUI)**
 
-The `py_visual_algo` library includes a user-friendly Graphical User Interface (GUI) that allows users to browse and run examples easily. To launch the GUI, navigate to the root directory of the library and run the following command:
+# Using the Graphical User Interface (GUI)
+
+The `py_visual_algo` library includes a user-friendly Graphical User Interface (GUI) to browse and run examples interactively. Follow these steps to use the GUI:
+
+---
+
+## **Steps to Run the GUI**
+
+### **1. Activate the Virtual Environment**
+
+Activate your virtual environment to use the installed library:
+
+- On **Windows**:
+  ```bash
+  <virtual_env_root>\Scripts\activate
+  ```
+
+- On **macOS/Linux**:
+  ```bash
+  source <virtual_env_root>/bin/activate
+  ```
+---
+
+### **2. Install the Library (if not already installed)**
+
+If the library is not already installed in the virtual environment, install it using pip:
+
+  ```bash
+pip install py_visual_algo
+  ```
+
+Ensure the examples folder is either included in the installed package or downloaded separately there (see Step 3).
+
+---
+
+### **3. Ensure the `examples` Folder is in the Correct Location**
+
+The `examples` folder must be located two levels above the GUI script (`gui.py`). If the library is installed in a virtual environment, place the `examples` folder under:
+
+```plaintext
+<virtual_env_root>/Lib/site-packages/examples
+```
+
+For example, in a typical virtual environment, the directory structure should look like this:
+
+```plaintext
+<virtual_env_root>/
+├── Lib/
+│   ├── site-packages/
+│   │   ├── py_visual_algo/
+│   │   │   ├── ui/
+│   │   │   │   └── gui.py
+│   │   ├── examples/
+│   │   │   ├── bfs1.py
+│   │   │   ├── bubble_sort1.py
+│   │   │   └── ...
+```
+
+Move the `examples` folder to the correct location by running:
 
 ```bash
-python py_visual_algo/ui/gui.py
+move <path_to_downloaded_examples> <virtual_env_root>/Lib/site-packages/
 ```
-Once the GUI is launched, you will see a list of available examples dynamically loaded from the examples/ directory. Select an example from the list and click the Run Example button to execute it.
+
+---
+
+### **4. Run the GUI**
+
+Once the directory structure is correct and the virtual environment is active, run the GUI:
+
+```bash
+python -m py_visual_algo.ui.gui
+```
+
+---
+
+### **5. Select and Run Examples**
+
+When the GUI launches:
+- It will dynamically load available examples from the `examples` folder.
+- Select an example from the list displayed in the GUI.
+- Click **Run Example** to execute it.
+
+Ensure the `examples` folder contains valid Python files (e.g., `bfs1.py`, `bubble_sort1.py`). The output or visualization will appear after the example runs successfully.
+
+
+---
+
+## **Running Examples Separately**
+
+If you prefer to run examples individually without using the GUI, follow these steps:
+
+### **Find the Example Files**
+The `examples` folder contains Python scripts for various algorithms. Ensure the `examples` folder is downloaded and placed in the correct location:
+```plaintext
+<virtual_env_root>/Lib/site-packages/examples
+```
+
+---
+
+### **3. Run an Example**
+Navigate to the `examples` folder and execute any example script directly. For example:
+
+- **Run BFS Example**:
+  ```bash
+  python <virtual_env_root>/Lib/site-packages/examples/bfs1.py
+  ```
+
+- **Run Bubble Sort Example**:
+  ```bash
+  python <virtual_env_root>/Lib/site-packages/examples/bubble_sort1.py
+  ```
+
+Replace `<virtual_env_root>` with the path to your virtual environment.
+
+---
+
+## **Troubleshooting**
+
+1. **No Examples Displayed in the GUI**:
+   - Verify the `examples` folder is in the correct location (`<virtual_env_root>/Lib/site-packages/examples`).
+   - Confirm the `examples` folder contains `.py` files.
+
+2. **Virtual Environment Not Activated**:
+   - Ensure the virtual environment is activated before running the GUI or examples.
+
+By following these steps, you can explore and run the library's examples interactively or individually.
 
 
 ## Contributing
