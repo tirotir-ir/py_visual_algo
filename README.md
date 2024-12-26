@@ -128,7 +128,7 @@ The `py_visual_algo` library includes a variety of examples to demonstrate its c
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/py_visual_algo.git
+git clone https://github.com/tirotir-ir/py_visual_algo.git
 cd py_visual_algo
 ```
 2. Navigate to the examples/ directory:
